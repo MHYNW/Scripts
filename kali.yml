@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  kali:
+    image: kalilinux/kali-rolling
+    container_name: 'Kali'
+    tty: true
+    ports:
+     - "25900:5900"
+     - "25901:5901"  
+    volumes:
+     - "/Users/mhynw/WorkSpace/DockerData:/root/Volume"
+  
